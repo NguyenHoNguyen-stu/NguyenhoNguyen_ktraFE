@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chi Tiết Sản Phẩm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="product-container">
+        <div class="product-images">
+            <div class="main-image">
+                <img src="https://tikicdn.com" alt="Sữa Glucerna" id="current-img">
+            </div>
+            <div class="thumb-images">
+                <img src="https://tikicdn.com" class="thumb active" onclick="changeImage(this)">
+                <img src="https://tikicdn.com" class="thumb" onclick="changeImage(this)">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <div class="brand-tags">
+                <span class="badge-top-deal">TOP DEAL</span>
+                <span class="badge-authentic"><i class="fas fa-check-circle"></i> Chính hãng</span>
+                <span class="brand-name">Thương hiệu: <a href="#">Glucerna</a></span>
+            </div>
+            <h1 class="product-title">Lon Sữa Glucerna 800g/lon - Tặng 2 gói dùng thử</h1>
+
+            <div class="rating-share">
+                <span class="stars">5.0 <i class="fas fa-star text-yellow"></i><i class="fas fa-star text-yellow"></i><i class="fas fa-star text-yellow"></i><i class="fas fa-star text-yellow"></i><i class="fas fa-star text-yellow"></i></span>
+                <span class="sold-count">(1) | Đã bán 436</span>
+            </div>
+
+            <div class="product-price">
+                <span id="product-price-val" data-price="1034550">1.034.550 ₫</span>
+            </div>
+
+            <div class="flavor-select">
+                <p>Hương vị</p>
+                <button class="btn-flavor active">Vani</button>
+            </div>
+
+            <div class="shipping-info">
+                <h3>Thông tin vận chuyển</h3>
+                <p class="address"><i class="fas fa-map-marker-alt"></i> Giao đến Q. 1, P. Bến Nghé, Hồ Chí Minh - <a href="#">Đổi</a></p>
+                <div class="shipping-method">
+                    <p class="now"><i class="fas fa-bolt"></i> <strong>Giao siêu tốc 2h</strong></p>
+                    <p class="time">Trước 11h ngày mai: Miễn phí <span class="old-ship">25.000₫</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="extra-services">
+            <h3>Dịch vụ bổ sung</h3>
+            <div class="service-item">
+                <span><i class="fas fa-credit-card" style="color: #0b74e5;"></i> Ưu đãi đến 600k với thẻ TikiCard</span>
+                <a href="#" class="btn-register">Đăng ký</a>
+            </div>
+            <div class="service-item">
+                <span><i class="fas fa-wallet" style="color: #0b74e5;"></i> Mua trước trả sau</span>
+                <a href="#" class="btn-register">Đăng ký</a>
+            </div>
+        </div>
+
+
+        <div class="purchase-widget">
+            <div class="seller-info">
+                <img src="https://tikicdn.com" alt="Tiki Trading" width="80">
+                <span class="rating">4.7 <i class="fas fa-star"></i> (5.5tr+ đánh giá)</span>
+            </div>
+
+            <div class="widget-flavor">
+                <p>Vị: <strong>Vani</strong></p>
+            </div>
+
+            <div class="quantity-select">
+                <p>Số lượng</p>
+                <div class="quantity-input">
+                    <button onclick="decreaseQty()">-</button>
+                    <input type="number" id="quantity" value="1" min="1" readonly>
+                    <button onclick="increaseQty()">+</button>
+                </div>
+            </div>
+
+            <div class="total-section">
+                <p>Tạm tính</p>
+                <div class="total-price" id="total-price-display">1.034.550 ₫</div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn-buy-now">Mua ngay</button>
+                <button class="btn-add-cart">Thêm vào giỏ</button>
+                <button class="btn-buy-later">Mua trước trả sau</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
